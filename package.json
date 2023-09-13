@@ -1,5 +1,8 @@
 {
   "scripts": {
     "dev": "bun run index.js"
+  },
+  "dependencies": {
+    "optional-require": "^1.1.8"
   }
 }

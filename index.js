@@ -1,1 +1,4 @@
-console.log(process.env.FOO_BAR, { fooBar: process.env.FOO_BAR });
+const requireOptional = require('optional-require')(require);
+
+const result = requireOptional('nonexistent.js');
+console.log('Result', result); // undefined in node, error in bun
